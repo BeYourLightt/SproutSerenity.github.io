@@ -1,0 +1,738 @@
+/* MAIN */
+html {
+  min-height: 100%;
+}
+
+body {
+  font-family: "Bellota Text";
+  min-width: 100%;
+  max-width: 100%;
+  min-height: 100%;
+  margin: auto;
+  background: rgb(193, 206, 175);
+  background: linear-gradient(
+    180deg,
+    rgba(193, 206, 175, 1) 10%,
+    rgba(191, 205, 173, 1) 20%,
+    rgba(213, 222, 201, 1) 55%,
+    rgba(235, 240, 229, 1) 70%,
+    rgba(240, 244, 236, 1) 100%
+  );
+  align-self: center;
+}
+
+main {
+  max-width: 1900px;
+  align-self: center;
+  justify-content: center;
+}
+
+@media only screen and (min-width: 1950px) {
+  main {
+    padding-left: 10%;
+    padding-right: 10%;
+    align-self: center;
+    justify-content: center;
+  }
+}
+/* Sticky */
+header {
+  font-family: "Bellota Text";
+  background-color: #8ea373;
+  padding: 2%;
+  text-align: right;
+  position: sticky;
+  top: 0;
+  max-height: 25px;
+  max-width: 100%;
+  z-index: 2;
+}
+
+@media only screen and (max-width: 500px) {
+  header {
+    font-family: "Bellota Text";
+    background-color: #8ea373;
+    padding: 2%;
+    text-align: right;
+    position: sticky;
+    top: 0;
+    max-height: 28px;
+    max-width: 100%;
+    z-index: 2;
+  }
+}
+
+.logo img {
+  width: 100px;
+  height: 100px;
+}
+
+@media only screen and (max-width: 700px) {
+  .logo img {
+    width: 70px;
+    height: 70px;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .logo img {
+    width: 60px;
+    height: 60px;
+  }
+
+  .title {
+    font-family: "Bellota Text";
+    font-size: 30px;
+    color: black;
+    text-align: left;
+    margin-right: auto;
+    padding: 2px;
+    margin-top: -10px;
+    padding-top: -5px;
+  }
+}
+@media only screen and (max-width: 300px) {
+  .title {
+    font-family: "Bellota Text";
+    font-size: 30px;
+    color: black;
+    text-align: left;
+    margin-right: auto;
+    padding: 2px;
+    margin-top: -12px;
+    padding-top: -7px;
+  }
+}
+/* Hide hamburger menu icon initially */
+.hamburger {
+  display: none;
+}
+
+.overlay-content {
+  display: none;
+}
+
+/* Media query for screen size less than or equal to 950px */
+@media only screen and (max-width: 950px) {
+  .pill-btn {
+    display: none;
+  }
+
+  .hamburger {
+    font-size: 30px; /*  the size of the bars icon */
+    color: white; /*  the color of the bars icon */
+    display: contents;
+    cursor: pointer;
+    position: absolute;
+    left: 93%;
+    width: 40px;
+    height: 40px;
+    margin: 0;
+    padding-top: -5rem;
+  }
+  .title {
+    font-family: "Bellota Text";
+    font-size: 30px;
+    color: black;
+    text-align: left;
+    margin-right: auto;
+    padding: 5px;
+    margin-top: -5px;
+  }
+  .overlay {
+    position: fixed;
+    width: 40%;
+    height: 100%;
+    top: 0;
+    left: 60%;
+    background-color: #768d59;
+    border: 3px solid white;
+  }
+  .overlay-content {
+    padding-top: 70px;
+    top: 25%;
+    width: 100%;
+    text-align: center;
+    display: block;
+  }
+  .overlay-content .pill-btn {
+    display: block;
+    margin-bottom: 10px;
+  }
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+}
+
+.title {
+  font-family: "Bellota Text";
+  font-size: 30px;
+  color: black;
+  text-align: left;
+  margin-right: auto;
+  padding: 10px;
+}
+nav {
+  font-family: "Bellota Text";
+  display: flex;
+  justify-content: right;
+  max-width: 100%;
+  min-width: 100%;
+}
+
+@media only screen and (max-width: 950px) {
+  .title {
+    font-family: "Bellota Text";
+    font-size: 20px;
+    color: black;
+    text-align: left;
+    margin-right: auto;
+    padding: 5px;
+    padding-top: 20px;
+  }
+}
+/*Sticky*/
+
+/*nav buttons*/
+.pill-btn {
+  background-color: #f0fae3;
+  color: black;
+  padding: 7px 12px 12px;
+  border-radius: 25px;
+  cursor: pointer;
+  margin: 5px;
+  text-align: center;
+  border: 3px solid #778e5a;
+  max-height: 14px;
+  margin-top: -5px;
+}
+@media only screen and (max-width: 400px) {
+  .pill-btn {
+    background-color: #f0fae3;
+    color: black;
+    padding: 7px 12px 12px;
+    border-radius: 25px;
+    cursor: pointer;
+    margin: 5px;
+    text-align: center;
+    border: 3px solid #778e5a;
+    max-height: 14px;
+    margin-top: -5px;
+    font-size: 13px;
+  }
+}
+.pill-btn:hover {
+  background-color: white;
+  text-decoration: underline;
+  border: 3px solid white;
+  transition: border 0.4s ease, color 0.5s ease;
+  align-items: center;
+}
+/*nav buttons*/
+
+/* you've got this img */
+.image {
+  text-align: center; /* Center the image horizontally */
+}
+
+.image img {
+  margin-bottom: 200px;
+  padding-bottom: 200px;
+  padding-top: 100px;
+  width: 450px;
+  height: 350px;
+  margin: 0 auto;
+}
+
+@media only screen and (max-width: 950px) {
+  /* you've got this img */
+  .image {
+    text-align: center; /* Center the image horizontally */
+  }
+
+  .image img {
+    margin-bottom: 200px;
+    padding-bottom: 100px;
+    padding-top: 100px;
+    width: 400px;
+    height: 300px;
+    margin: 0 auto;
+  }
+}
+@media only screen and (max-width: 500px) {
+  /* you've got this img */
+  .image {
+    text-align: center; /* Center the image horizontally */
+  }
+
+  .image img {
+    margin-bottom: 200px;
+    padding-bottom: 100px;
+    padding-top: 100px;
+    width: 300px;
+    height: 200px;
+    margin: 0 auto;
+  }
+}
+/* you've got this img */
+
+/* Other pages */
+.pages {
+  display: flex;
+  flex-wrap: wrap; /* Allow items to wrap onto the next line on smaller screens */
+  justify-content: space-around;
+  align-items: center; /* Center items vertically within the container */
+  cursor: pointer;
+}
+.pages p {
+  margin-top: 10px;
+  text-align: center;
+}
+.pages img:nth-child(1) {
+  margin: 5px;
+  border-radius: 25px;
+  border: 5px solid #a0b585;
+  width: 350px;
+  height: 400px;
+}
+.pages img:nth-child(2) {
+  margin: 5px;
+  border-radius: 25px;
+  border: 5px solid #a0b585;
+  width: 350px;
+  height: 400px;
+}
+.pages img:nth-child(3) {
+  border-radius: 25px;
+  border: 5px solid #a0b585;
+  width: 350px;
+  height: 400px;
+}
+@media only screen and (max-width: 500px) {
+  .pages img:nth-child(1) {
+    margin: 5px;
+    border-radius: 25px;
+    border: 5px solid #a0b585;
+    width: 250px;
+    height: 300px;
+  }
+  .pages img:nth-child(2) {
+    margin: 5px;
+    border-radius: 25px;
+    border: 5px solid #a0b585;
+    width: 250px;
+    height: 300px;
+  }
+  .pages img:nth-child(3) {
+    border-radius: 25px;
+    border: 5px solid #a0b585;
+    width: 250px;
+    height: 300px;
+  }
+}
+.pages img:nth-child(3):hover {
+  border-radius: 25px;
+  border: 5px solid white;
+  transition: border 0.3s ease, color 0.5s ease;
+}
+.pages img:nth-child(2):hover {
+  border-radius: 25px;
+  border: 5px solid white;
+  transition: border 0.3s ease, color 0.5s ease;
+}
+.pages img:nth-child(1):hover {
+  border-radius: 25px;
+  border: 5px solid white;
+  transition: border 0.3s ease, color 0.5s ease;
+}
+/* Other pages */
+
+/* page names */
+.page-btn {
+  margin-top: 2px;
+  font-size: 20px;
+}
+/*page names*/
+
+/*footer*/
+.social-icons {
+  text-align: center;
+  justify-content: center;
+  margin-top: 20px; /* Add margin to space out from the previous element */
+}
+
+.fa {
+  display: inline-block; /* Change display to inline-block */
+  justify-content: center;
+  padding: 15px;
+  font-size: 20px;
+  width: 20px;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 50%;
+  margin: 0 5px;
+  margin-bottom: 20px;
+}
+
+.fa:hover {
+  opacity: 0.4;
+}
+
+.fa-instagram {
+  background: #8ea373;
+  color: white;
+}
+
+.fa-twitter {
+  background: #8ea373;
+  color: white;
+}
+
+/*footer*/
+
+hr {
+  border: none;
+  border-top: 1.5px solid #000;
+  margin: 20px 20px;
+}
+/*footer*/
+/*MAIN*/
+
+/*MENTAL HEALTH PAGE*/
+.Mental_Health {
+  font-family: "Bellota Text";
+  font-size: 25px;
+  color: black;
+  text-align: center;
+}
+
+.mental_intro {
+  text-align: center;
+  font-size: 15px;
+  background-color: #f0fae3;
+  border-radius: 90px;
+  margin-right: 10%;
+  margin-left: 10%;
+  padding: 15px;
+  justify-content: center;
+}
+.mental_health_info {
+  text-align: left;
+  margin: 1rem;
+  font-family: "Bellota Text";
+  font-size: 15px;
+  color: black;
+}
+
+.mental_health_images {
+  display: flex;
+  flex-wrap: wrap; /* Allow items to wrap onto the next line on smaller screens */
+  align-items: center; /* Center items vertically within the container */
+  width: 100%;
+  align-self: center;
+}
+
+.mental_health_images img {
+  margin: 0 30px; /* Adjust horizontal margin */
+  border-radius: 25px;
+  border: 5px solid #6d8450;
+  margin-top: 10px;
+  width: 450px;
+  height: 450px;
+}
+
+@media only screen and (max-width: 950px) {
+  .mental_health_images img {
+    margin: 0 30px;
+    border-radius: 25px;
+    border: 5px solid #6d8450;
+    margin-top: 10px;
+    width: 350px;
+    height: 350px;
+  }
+}
+@media only screen and (max-width: 550px) {
+  .mental_health_images img {
+    margin: 0 30px;
+    border-radius: 25px;
+    border: 5px solid #6d8450;
+    margin-top: 10px;
+    width: 250px;
+    height: 250px;
+  }
+}
+
+@media only screen and (max-width: 550px) {
+  .mental_intro {
+    text-align: center;
+    font-size: 15px;
+    background-color: #f0fae3;
+    border-radius: 60px;
+    margin-right: 15%;
+    margin-left: 15%;
+    padding: 10px;
+    justify-content: center;
+    padding: 15px;
+  }
+}
+/*MENTAL HEALTH PAGE*/
+
+/*PHYSICAL HEALTH PAGE*/
+.physical_Health {
+  font-family: "Bellota Text";
+  font-size: 25px;
+  color: black;
+  text-align: center;
+}
+
+.physical_intro {
+  text-align: center;
+  font-size: 15px;
+  background-color: #f0fae3;
+  border-radius: 90px;
+  margin-right: 10%;
+  margin-left: 10%;
+  justify-content: center;
+  padding: 15px;
+}
+
+.physical_health_info {
+  text-align: left;
+  margin: 1rem;
+  font-family: "Bellota Text";
+  font-size: 15px;
+  color: black;
+}
+
+.physical_health_images {
+  flex-wrap: wrap; /* Allow items to wrap onto the next line on smaller screens */
+  display: inline;
+  display: flex;
+  width: 100%;
+  margin: 10px;
+}
+
+/* Specify border color within the classes */
+.yoga img {
+  margin: 10px;
+  border-radius: 25px;
+  border: 5px solid white; /* Specify border style */
+  margin-top: 10px; /* Set border color for yoga */
+  width: 629px;
+  height: 450px;
+}
+
+.meditating img {
+  margin: 10px;
+  border-radius: 25px;
+  border: 5px solid #6d8450; /* Specify border style */
+  margin-top: 10px;
+  width: 500px;
+  height: 600px;
+}
+
+@media only screen and (max-width: 950px) {
+  .yoga img {
+    margin: 10px;
+    border-radius: 25px;
+    border: 5px solid white; /* Specify border style */
+    margin-top: 10px; /* Set border color for yoga */
+    width: 329px;
+    height: 350px;
+  }
+
+  .meditating img {
+    margin: 10px;
+    border-radius: 25px;
+    border: 5px solid #6d8450; /* Specify border style */
+    margin-top: 10px;
+    width: 329px;
+    height: 450px;
+  }
+}
+
+@media only screen and (max-width: 550px) {
+  .yoga img {
+    margin: 10px;
+    border-radius: 25px;
+    border: 5px solid white; /* Specify border style */
+    margin-top: 10px; /* Set border color for yoga */
+    width: 429px;
+    height: 250px;
+  }
+
+  .meditating img {
+    margin: 10px;
+    border-radius: 25px;
+    border: 5px solid #6d8450; /* Specify border style */
+    margin-top: 10px;
+    width: 329px;
+    height: 450px;
+  }
+}
+
+@media only screen and (max-width: 450px) {
+  .yoga img {
+    margin: 10px;
+    border-radius: 25px;
+    border: 5px solid white; /* Specify border style */
+    margin-top: 10px; /* Set border color for yoga */
+    width: 250px;
+    height: 175px;
+  }
+
+  .meditating img {
+    margin: 10px;
+    border-radius: 25px;
+    border: 5px solid #6d8450;
+    margin-top: 10px;
+    width: 250px;
+    height: 350px;
+  }
+}
+
+@media only screen and (max-width: 650px) {
+  .physical_intro {
+    text-align: center;
+    font-size: 15px;
+    background-color: #f0fae3;
+    border-radius: 60px;
+    margin-right: 15%;
+    margin-left: 15%;
+    padding: 15px;
+    justify-content: center;
+  }
+}
+/*PHYSICAL HEALTH PAGE*/
+
+/*RESOURCES*/
+.resources_intro {
+  text-align: center;
+  font-size: 15px;
+  background-color: #f0fae3;
+  border-radius: 90px;
+  margin-right: 10%;
+  margin-left: 10%;
+  padding: 15px;
+  justify-content: center;
+}
+.resources {
+  font-family: "Bellota Text";
+  font-size: 25px;
+  color: black;
+  text-align: center;
+}
+
+.resources_list {
+  text-align: left;
+  margin: 1rem;
+  font-family: "Bellota Text";
+  font-size: 15px;
+  color: black;
+}
+
+.link {
+  color: #156bc6;
+}
+
+.videos {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.headspace {
+  border: solid 5px #6d8450;
+  border-radius: 25px;
+  margin: 10px;
+}
+.headspace2 {
+  border: solid 5px #6d8450;
+  border-radius: 25px;
+  margin: 10px;
+}
+
+@media only screen and (max-width: 550px) {
+  .resources_intro {
+    text-align: center;
+    font-size: 15px;
+    background-color: #f0fae3;
+    border-radius: 60px;
+    margin-right: 15%;
+    margin-left: 15%;
+    padding: 15px;
+    justify-content: center;
+  }
+}
+/*RESOURCES*/
+
+/*checklist*/
+.checklist_intro {
+  text-align: center;
+  font-size: 15px;
+  background-color: #f0fae3;
+  border-radius: 90px;
+  margin-right: 15%;
+  margin-left: 15%;
+  padding: 15px;
+  justify-content: center;
+}
+
+@media only screen and (max-width: 550px) {
+  .checklist_intro {
+    text-align: center;
+    font-size: 15px;
+    background-color: #f0fae3;
+    border-radius: 60px;
+    margin-right: 15%;
+    margin-left: 15%;
+    padding: 15px;
+    justify-content: center;
+  }
+}
+.checklist {
+  font-family: "Bellota Text";
+  font-size: 25px;
+  color: black;
+  text-align: center;
+}
+
+.list {
+  font-family: "Bellota Text";
+  font-size: 18px;
+  color: black;
+  text-align: left;
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 12px;
+}
+.container {
+  font-family: "Bellota Text";
+  font-size: 16px;
+  color: black;
+  text-align: left;
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.checkedboximg {
+  display: flex; /* Ensure items are displayed in a row */
+  align-items: center; /* Align items vertically */
+}
+
+.checkedboximg img {
+  width: 50px; /* Adjust image width */
+  height: 50px; /* Adjust image height */
+  margin-left: 35px; /* Adjust margin to position image */
+}

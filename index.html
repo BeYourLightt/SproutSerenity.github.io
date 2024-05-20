@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="Style.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Bellota Text"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <title>Sprout serenity</title>
+  </head>
+  <body>
+    <header class="sticky">
+      <nav>
+        <div class="logo">
+          <img src="./images/Logo.png" alt="logo" />
+        </div>
+        <div class="title">Sprout Serenity</div>
+        <a href="Resources.html" class="pill-btn" id="btn4Nav">Resources</a>
+        <a href="Mental_Health.html" class="pill-btn">Mental Health</a>
+        <a href="Physical_Health.html" class="pill-btn" id="btn3Nav"
+          >Physical Health</a
+        >
+        <a href="Checklist.html" class="pill-btn" id="btn5Nav">Checklist</a>
+        <a href="index.html" class="pill-btn" id="btn1Nav">Home</a>
+        <div class="hamburger" id="hamburger">
+          <i class="fa fa-bars"></i>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <div class="image">
+        <img
+          class="image"
+          src="./images/YouveGotThis.png"
+          alt="You've got this text on a green swirl"
+        />
+      </div>
+      <div class="pages">
+        <div class="physical">
+          <a href="Physical_Health.html">
+            <img
+              src="./images/Physical.png"
+              alt="Woman in yoga wear meditating in bed"
+            />
+          </a>
+          <p class="page-btn" id="btn1">
+            <a href="Physical_Health.html">Physical Health</a>
+          </p>
+        </div>
+        <div class="mental">
+          <a href="Mental_Health.html">
+            <img
+              src="./images/Mental.png"
+              alt="A notebook and candle on a wooden table with plants scattered around"
+            />
+          </a>
+          <p class="page-btn" id="btn2">
+            <a href="Mental_Health.html">Mental Health</a>
+          </p>
+        </div>
+        <div class="check">
+          <a href="Checklist.html">
+            <img
+              src="./images/Checklist.png"
+              alt="Incence burning in a clean white room"
+            />
+          </a>
+          <p class="page-btn" id="btn3">
+            <a href="Checklist.html">Checklist</a>
+          </p>
+        </div>
+      </div>
+    </main>
+
+    <footer>
+      <hr />
+      <div class="social-icons">
+        <a href="https://www.instagram.com/" class="fa fa-instagram"></a>
+        <a href="https://www.twitter.com/" class="fa fa-twitter"></a>
+      </div>
+    </footer>
+    <!-- JavaScript -->
+    <script>
+      // Open the overlay menu when clicking the hamburger icon
+      document
+        .getElementById("hamburger")
+        .addEventListener("click", function (event) {
+          event.stopPropagation(); // Prevent the click event from bubbling up to the window
+          document.getElementById("overlay").style.display = "block";
+        });
+
+      // Close the overlay menu when clicking outside of it
+      window.addEventListener("click", function (event) {
+        if (!event.target.matches("#hamburger")) {
+          // Check if the click target is not the hamburger icon
+          document.getElementById("overlay").style.display = "none";
+        }
+      });
+    </script>
+
+    <!-- Overlay for the menu pop-up -->
+    <div id="overlay" class="overlay">
+      <div class="overlay-content">
+        <div class="overlay-content">
+          <a href="Resources.html" class="pill-btn">Resources</a>
+          <a href="Mental_Health.html" class="pill-btn">Mental Health</a>
+          <a href="Physical_Health.html" class="pill-btn">Physical Health</a>
+          <a href="Checklist.html" class="pill-btn">Checklist</a>
+          <a href="index.html" class="pill-btn">Home</a>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="Style.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Bellota Text"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <title>Sprout serenity</title>
+  </head>
+  <body>
+    <header class="sticky">
+      <nav>
+        <div class="logo">
+          <img src="./images/Logo.png" alt="logo" />
+        </div>
+        <div class="title">Sprout Serenity</div>
+        <a href="Resources.html" class="pill-btn" id="btn4Nav">Resources</a>
+        <a href="Mental_Health.html" class="pill-btn">Mental Health</a>
+        <a href="Physical_Health.html" class="pill-btn" id="btn3Nav"
+          >Physical Health</a
+        >
+        <a href="Checklist.html" class="pill-btn" id="btn5Nav">Checklist</a>
+        <a href="index.html" class="pill-btn" id="btn1Nav">Home</a>
+        <div class="hamburger" id="hamburger">
+          <i class="fa fa-bars"></i>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <h1 class="Mental_Health">Mental Health</h1>
+      <p class="mental_intro">
+        Welcome to the Mental Health section of our self-care platform,
+        dedicated to supporting your emotional and psychological well-being.<br />
+        Taking care of your mental health is an essential part of self-care.<br /><br />
+        While self-care is valuable, your mental health is unique. It's crucial
+        to consult mental health professionals before making significant
+        changes. They offer personalized guidance that aligns with your mental
+        health needs, ensuring a safer and more effective self-care approach.<br />
+        Combine self-care with expert advice for a comprehensive mental health
+        strategy.<br />
+      </p>
+      <div class="mental_health_info">
+        <h3>Understanding Mental Health:<br /></h3>
+        <p>
+          Mental health involves emotional, psychological, and social
+          well-being. It impacts how we think, feel, and behave. Recognizing its
+          importance is the first step toward holistic self-care.
+        </p>
+        <h3>Self-Care Strategies for Mental Wellness:<br /></h3>
+        <ul>
+          <li>
+            Mindfulness and Meditation: Incorporate mindfulness practices into
+            your daily routine to reduce stress and enhance self-awareness.
+            Meditation can calm the mind and promote mental clarity
+          </li>
+          <li>
+            Healthy Coping Mechanisms: Discover healthy ways to cope with stress
+            and emotions. Journaling, creative expression, or engaging in
+            hobbies can be effective outlets.
+          </li>
+          <li>
+            Setting Boundaries: Establish boundaries that safeguard your mental
+            health. Learning to prioritize your needs and say no when necessary
+            is crucial for self-care.
+          </li>
+          <li>
+            Seeking Support: Reach out to trusted individuals or mental health
+            professionals for guidance and support during challenging times.
+            Therapy or counseling can provide valuable insights and coping
+            strategies.
+          </li>
+        </ul>
+        <h3>Managing Stress and Anxiety:<br /></h3>
+        <ul>
+          <li>
+            Stress Reduction Techniques:<br />Practice deep breathing exercises,
+            progressive muscle relaxation, or yoga to alleviate stress and
+            promote relaxation.
+          </li>
+          <li>
+            Anxiety Management:<br />Identify triggers and adopt strategies such
+            as cognitive-behavioral techniques or grounding exercises to manage
+            anxiety.
+          </li>
+        </ul>
+      </div>
+      <div class="mental_health_images">
+        <div class="Online">
+          <img
+            src="./images/Online_Mental_Health.png"
+            alt="two people in separate computer screens reaching out and helping eachother"
+          />
+        </div>
+        <div class="breathing">
+          <img
+            src="./images/BreathingGIF.gif"
+            alt="Gif of a cartoon woman meditating. has pastel coloured circles behind her to give a calming breathing effect"
+          />
+        </div>
+      </div>
+      <div class="mental_health_info">
+        <h3>Creating a Supportive Environment:</h3>
+        <p>
+          Foster connections with supportive friends, family, or community.
+          Having a strong social network positively impacts mental well-being.
+        </p>
+        <h3>Healthy Lifestyle Habits:</h3>
+        <ul>
+          <li>
+            Balanced Diet:<br />Nutrition plays a role in mental health.
+            Prioritize a balanced diet with nutrients that support brain
+            function and overall well-being.
+          </li>
+          <li>
+            Regular Exercise:<br />Engage in physical activity to boost mood,
+            reduce stress, and improve mental clarity.
+          </li>
+          <li>
+            Adequate Sleep:<br />Quality sleep is vital for mental health.
+            Establish a bedtime routine for better sleep quality.
+          </li>
+        </ul>
+        <h3>Reducing Stigma and Raising Awareness:</h3>
+        <p>
+          Promote understanding and acceptance of mental health challenges by
+          initiating conversations and reducing stigma. Increase awareness to
+          foster a supportive community.
+        </p>
+      </div>
+    </main>
+    <footer>
+      <hr />
+      <div class="social-icons">
+        <a href="https://www.instagram.com/" class="fa fa-instagram"></a>
+        <a href="https://www.twitter.com/" class="fa fa-twitter"></a>
+      </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script>
+      // Open the overlay menu when clicking the hamburger icon
+      document
+        .getElementById("hamburger")
+        .addEventListener("click", function (event) {
+          event.stopPropagation(); // Prevent the click event from bubbling up to the window
+          document.getElementById("overlay").style.display = "block";
+        });
+
+      // Close the overlay menu when clicking outside of it
+      window.addEventListener("click", function (event) {
+        if (!event.target.matches("#hamburger")) {
+          // Check if the click target is not the hamburger icon
+          document.getElementById("overlay").style.display = "none";
+        }
+      });
+    </script>
+
+    <!-- Overlay for the menu pop-up -->
+    <div id="overlay" class="overlay">
+      <div class="overlay-content">
+        <div class="overlay-content">
+          <a href="Resources.html" class="pill-btn" id="btn4">Resources</a>
+          <a href="Mental_Health.html" class="pill-btn" id="btn2"
+            >Mental Health</a
+          >
+          <a href="Physical_Health.html" class="pill-btn" id="btn3"
+            >Physical Health</a
+          >
+          <a href="Checklist.html" class="pill-btn" id="btn5">Checklist</a>
+          <a href="index.html" class="pill-btn" id="btn1">Home</a>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
